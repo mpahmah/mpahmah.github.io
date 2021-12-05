@@ -108,9 +108,9 @@ jQuery(document).ready(function() {
     initAudio($('.playlist li:first-child'));
 
     // hide playlist
-$(‘.close’).click(function (e) {
+$('.close').click(function (e) {
 e.preventDefault();
-$(‘.playlist’).fadeOut(300);
+$('.playlist').fadeOut(300);
 });
     
     // set volume
