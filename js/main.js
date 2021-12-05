@@ -133,12 +133,3 @@ jQuery(document).ready(function() {
         },
         stop: function(event,ui) {}
     });
-// show playlist
-$(‘.pl’).click(function (e) {
-e.preventDefault();
-if ($(‘.playlist’).is(“:visible”)) {
-$(‘.playlist’).fadeOut(300)
-} else {
-$(‘.playlist’).fadeIn(300);
-}
-});
