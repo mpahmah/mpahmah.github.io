@@ -134,3 +134,8 @@ jQuery(document).ready(function() {
         stop: function(event,ui) {}
     });
 });
+// hide playlist
+$(‘.close’).click(function (e) {
+e.preventDefault();
+$(‘.playlist’).fadeOut(300);
+});
