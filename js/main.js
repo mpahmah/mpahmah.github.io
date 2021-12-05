@@ -107,6 +107,12 @@ jQuery(document).ready(function() {
     // initialization - first element in playlist
     initAudio($('.playlist li:first-child'));
 
+    // hide playlist
+$(‘.close’).click(function (e) {
+e.preventDefault();
+$(‘.playlist’).fadeOut(300);
+});
+    
     // set volume
     song.volume = 0.8;
 
