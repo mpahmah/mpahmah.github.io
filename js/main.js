@@ -133,9 +133,12 @@ jQuery(document).ready(function() {
         },
         stop: function(event,ui) {}
     });
-});
-// hide playlist
-$(‘.close’).click(function (e) {
+// show playlist
+$(‘.pl’).click(function (e) {
 e.preventDefault();
-$(‘.playlist’).fadeOut(300);
+if ($(‘.playlist’).is(“:visible”)) {
+$(‘.playlist’).fadeOut(300)
+} else {
+$(‘.playlist’).fadeIn(300);
+}
 });
